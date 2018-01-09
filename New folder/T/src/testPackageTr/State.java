@@ -6,14 +6,19 @@ public class State {
 		// TODO Auto-generated method stub
 
 		
-		for(int i=0;i<5;i++)
+		test: for(int i=0;i<5;i++)
 		{
 			
-			if(i==3)
+			for(int j=0;j<4;j++)
 			{
-				continue;
+				if(j==2)
+				{
+					continue test;
+				}
+				System.out.println("j valueis :"+j);
 			}
-			System.out.println(i);
+			
+			System.out.println("i value is "+i);
 		}
 	}
 
